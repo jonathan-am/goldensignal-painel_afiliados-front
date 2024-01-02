@@ -1,0 +1,763 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-page-header {
+    height: 80px;
+    background-color: rgba(0, 255, 255, 0.397);
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.home-page-header h1 {
+    border: #926003 solid 6px;
+    color: black;
+    font-weight: 600;
+    padding: 2px 6px 1px 6px;
+}
+
+.home-page-main {
+    min-height: 87vh;
+    background-color: rgb(134, 143, 153);
+    max-width: 100%;
+    display: flow-root;
+    justify-items: center;
+}
+
+.aba-selector {
+    display: grid;
+    grid-auto-flow: column;
+    width: 98%;
+    height: 50px;
+    background-color: rgba(94, 136, 119, 0.918);
+    border-radius: 2px;
+    justify-items: center;
+    align-items: center;
+    margin: 2px auto 0 auto;
+    border: #926003 solid 2px;
+}
+
+.aba-selector div{
+    background-color: #926003a4;
+    padding: 5px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.tutorial-button {
+    width: auto;
+    text-align: center;
+    max-width: 300px;
+    font-size: smaller;
+    text-decoration: underline;
+    padding: 1px;
+    border-radius: 6px;
+    height: auto;
+    margin: 30px auto 0 auto;
+    background-color: rgba(190, 250, 51, 0.63);
+}
+
+.configuration-container {
+    display: grid;
+    margin: 5px auto 50px auto;
+    padding: 5px;
+    width: 90%;
+    height: auto;
+    background-color: #FFF;
+    border-radius: 18px 18px 0 0;
+    row-gap: 30px;
+}
+
+.configuration-container .main-titles-configuration {
+    display: grid;
+    grid-template-rows: 20px auto;
+    justify-items: center;
+    row-gap: 15px;
+}
+
+.configuration-container .main-titles-configuration .header-title {
+    font-weight: 600;
+}
+
+.configuration-container .main-titles-configuration .titles {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 8px;
+}
+
+.configuration-container .main-titles-configuration .titles div {
+    display: grid;
+    grid-template-columns: 130px auto;
+}
+
+.configuration-container .main-titles-configuration .titles .watermark {
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+}
+
+.configuration-container .main-titles-configuration .titles div span {
+    background-color: #8eff0436;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+.configuration-container .main-titles-configuration .titles div input {
+    background-color: #5f5e5e;
+    border: none;
+    border-radius: 6px;
+    padding: 0 0 0 4px;
+    color: #FFF;
+}
+
+.configuration-save-button {
+    height: 40px;
+    width: 90px;
+    background-color: #8eff04;
+    text-align: center;
+    margin: 0 auto 8px auto;
+    display: grid;
+    align-items: center;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.home-page-configuration {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.home-page-styles {
+    display: grid;
+    grid-auto-flow: row;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    height: auto;
+    justify-items: center;
+}
+.header-styles h4 {
+    margin: 0 0 15px 0;
+}
+
+.header-styles {
+    text-align: center;
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 5px;
+}
+
+.background, .text-color {
+    display: grid;
+    grid-template-columns: 120px 60px;
+}
+
+.background .teste, .text-color .teste {
+    border: #8eff04 solid 3px;
+}
+
+.main-styles {
+    text-align: center;
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 5px;
+    justify-items: center;
+}
+
+.main-styles h4 {
+    margin: 25px 0 15px 0;
+}
+.main-styles .image {
+    display: grid;
+    grid-template-columns: auto 90px auto;
+    column-gap: 5px;
+}
+
+.main-styles .image input {
+    background-color: #5f5e5e;
+    border: none;
+    border-radius: 8px;
+    padding: 0 0 0 3px;
+    color: #8eff04;
+    font-weight: 500;
+}
+
+.footer-styles {
+    text-align: center;
+    display: grid;
+    margin: 15px auto 15px auto;
+    row-gap: 5px;
+    grid-auto-flow: row;
+}
+
+.footer-styles h4 {
+    margin: 10px 0 10px 0;
+}
+
+.footer-styles .instagram {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 5px;
+
+}
+
+.footer-styles .instagram h5 {
+    margin: 5px 0 10px 0;
+    text-align: center;
+}
+
+.game-page-configuration {
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+}
+
+.game-page-styles {
+    display: grid;
+    grid-auto-flow: row;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    height: auto;
+    justify-items: center;
+    text-align: center;
+}
+
+.game-page-configuration h3 {
+    margin: 5px 0 20px 0;
+}
+
+
+
+.edit-game, .edit-plataform, .add-new-plataform, .add-new-games {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #131212ad;
+}
+
+.add-new-plataform-container , .add-new-game-container{
+    background-color: #fff;
+    height: auto;
+    width: 300px;
+    margin: 100px auto 0 auto;
+    border-radius: 8px;
+    display: grid;
+    row-gap: 10px;
+    padding: 5px;
+}
+
+.add-new-plataform-container-header, .add-new-game-container-header  {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: end;
+    margin: 5px 0 0 0;
+}
+
+.add-new-plataform-container-header span, .add-new-game-container-header span {
+    font-weight: 600;
+}
+
+.add-new-plataform-container input, .add-new-game-container input {
+    background-color: #47474794;
+    border-radius: 6px;
+}
+
+.add-new-plataform-container-input-name, .add-new-plataform-container-input-image , .add-new-plataform-container-input-link, .add-new-game-container-input-name, .add-new-game-container-input-image{
+    display: grid;
+    grid-template-columns: 80px 140px;
+    justify-content: space-around;
+}
+
+.add-new-plataform-container-save-button, .add-new-game-container-save-button {
+    background-color: #8eff04;
+    width: 60px;
+    height: 20px;
+    border-radius: 6px;
+    text-align: center;
+    margin: 10px auto 5px auto;
+    padding: 3px 0 0 0;
+    font-weight: 600;
+}
+
+.edit-plataform-header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: end
+}
+
+.edit-plataform-header .edit-plataform-header-close {
+    padding: 2px;
+    margin: 4px;
+    border: #000000 solid 1px;
+    height: 10px;
+}
+
+.edit-plataform-container {
+    width: 70%;
+    height: auto;
+    background-color: #FFF;
+    border-radius: 8px;
+    margin: 100px auto 0 auto;
+    display: grid;
+    grid-template-rows: 30px auto auto auto;
+    padding: 0 5px 0 5px;
+    row-gap: 8px;
+}
+
+.edit-plataform-header-title {
+    text-align: center;
+    font-weight: 700;
+    padding: 5px 0 5px 0;
+}
+
+.edit-plataform-container span {
+    font-weight: 600;
+}
+
+.edit-plataform-container input{
+    background-color: #4d4b4b54;
+    border-radius: 6px;
+    padding: 0 0 0 6px;
+}
+
+.edit-plataform-container .edit-plataform-name {
+    display: grid;
+    grid-template-columns: 60px 120px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.edit-plataform-container .edit-plataform-image {
+    display: grid;
+    grid-template-columns: 60px 120px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.edit-plataform-container .edit-plataform-link {
+    display: grid;
+    grid-template-columns: 60px 120px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.edit-plataform-container .edit-plataform-hot {
+    display: grid;
+    grid-template-columns: 60px 120px;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: end;
+}
+
+.edit-plataform-buttons {
+    margin: 15px 0 15px 0;
+    height: auto;
+    width: auto;
+    display: grid;
+    justify-items: center;
+    gap: 0;
+    column-gap: 0;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.edit-plataform-buttons-save {
+    width: 60px;
+    height: 20px;
+    padding: 3px 2px 0 2px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: greenyellow;
+}
+
+.edit-plataform-buttons-delete {
+    width: 60px;
+    height: 20px;
+    padding: 3px 2px 0 2px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: rgba(255, 0, 0, 0.623);
+}
+
+.edit-game-container {
+    width: 85%;
+    height: auto;
+    max-height: auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin: 100px auto 0 auto;
+    font-weight: 600;
+    display: grid;
+    grid-template-rows: 40px auto auto;
+    padding: 5px;
+}
+
+.edit-game-container-header {
+    width: 100%;
+    margin: 10px auto 10px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: end;
+    justify-content: end;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.edit-game-container-header-close {
+    width: 60px;
+}
+
+.edit-game-container .game-form {
+    width: auto;
+    display: grid;
+    grid-template-rows: 40px 40px;
+}
+.edit-game-container .game-form div {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: end;
+    align-items: center;
+}
+
+.edit-game-container .game-form div input {
+    width: 200px;
+    height: 20px;
+    margin: 0 25px 0 0;
+    border-radius: 6px;
+    padding-left: 4px;
+    background-color: #a19e9ec2;
+}
+
+.edit-game-container-input-links {
+    background-color: #949393cb;
+    display: grid;
+    grid-template-rows: 30px auto;
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.add-new-link {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 80px 80px 80px 60px;
+    background-color: #4241417e;
+    height: 30px;
+    align-items: center;
+    column-gap: 5px;
+    justify-items: stretch;
+}
+
+.add-new-link input {
+    border-radius: 3px;
+    text-align: center;
+    width: 80px;
+    height: 18px;
+}
+
+.add-new-link span {
+    text-align: center;
+}
+
+.add-new-link .add-button {
+    background-color: #8eff04;
+    padding: 1px 3px 0 3px;
+    border-radius: 6px;
+    font-weight: 500;
+    width: 15px;
+}
+
+.links-list-container{
+    display: grid;
+    grid-template-rows: 30px auto;
+}
+.links-list-header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    border: #000000 solid 1px;
+}
+
+.links-list-container .links {
+    padding: 5px 0 5px 0;
+    display: grid;
+    grid-auto-flow: row;
+    grid-row: span;
+    row-gap: 5px;
+    border: #000000 solid 1px;
+}
+
+.links-list-container .links .link {
+    font-weight: 200;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    background-color: #ffffff62;
+    border-radius: 6px;
+    margin: 0 4px 0 4px;
+}
+
+.links-list-container .links .link .url {
+    max-width: 120px;
+    padding: 2px;
+    border: none;
+    border-radius: 4px;
+    background-color: #8eff04;
+}
+
+.edit-game-container-input-links .title {
+    width: auto;
+    height: 50px;
+    margin: 5px 0 0 15px;
+}
+
+.links-list-container .links .link .delete {
+    padding: 1px 4px 0 4px;
+    margin: 1px 0 1px 0;
+}
+
+.edit-game-buttons {
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.edit-game-save-button {
+    width: 80px;
+    height: 40px;
+    background-color: #8eff04;
+    border-radius: 8px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-weight: 800;
+    padding: 0 0 3px 0;
+}
+
+.edit-game-delete-button {
+    width: 80px;
+    height: 40px;
+    background-color: #fa5959e7;
+    border-radius: 8px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-weight: 800;
+    padding: 0 0 3px 0;
+}
+
+
+.plataform-list {
+    margin: 5px auto 30px auto;
+    width: 94%;
+    height: auto;
+    height: auto;
+    background-color: rgba(245, 245, 220, 0.719);
+    border: #fff solid 3px;
+    display: grid;
+    grid-template-rows: 24px 25px auto;
+    border-radius: 6px;
+}
+
+
+.plataforms {
+    margin-top: 10px;
+    display: grid;
+    justify-items: center;
+    grid-auto-flow: row;
+    grid-auto-rows: 30px;
+    row-gap: 2px;
+}
+
+.plataforms .plataform{
+    background-color: rgba(51, 97, 75, 0.425);
+    width: 100%;
+    height: 20px;
+    font-size: small;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 60px minmax(90px, 90px) auto auto;
+    justify-items: center;
+    align-items: center;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.plataforms .plataform .plataform-edit-button {
+    width: auto;
+    padding: 1px 4px 1px 4px;
+    border-radius: 6px;
+    border: none;
+    background-color: #926003;
+    font-weight: 600;
+}
+
+.table-page-buttons {
+    height: 30px;
+    background-color: #926003;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+}
+
+.table-page-buttons-actual span {
+    padding: 1px 5px 2px 5px;
+    border-radius: 6px;
+}
+
+.table-page-buttons-previous {
+    margin-right: 15px;
+}
+
+.table-page-buttons-next {
+    margin-left: 15px;
+}
+
+.table-page-buttons-next span, .table-page-buttons-previous span {
+    border: #fff solid 1px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.plataform-list .plataform-list-title {
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-weight: 600;
+    background-color: rgb(0, 174, 255);
+    padding-top: 4px;
+}
+
+
+.list-desc-table-header {
+    width: 100%;
+    height: 24px;
+    background-color: aqua;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    text-align: center;
+}
+
+.list-desc-table-header  b{
+    border: #926003 solid 1px;
+}
+
+.plataform-list .add-plataform-button {
+    height: 25px;
+    width: 150px;
+    border-radius: 12px;
+    background-color: aqua;
+    color: rgb(26, 23, 23);
+    font-weight: 700;
+    margin: 5px auto 10px auto;
+    border: #f39111 dashed 1px;
+}
+
+.game-list{
+    width: 100%;
+    height: auto;
+    grid-template-rows: auto auto auto;
+    margin-bottom: 30px;
+}
+
+.game-container-title {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    margin: 10px auto 0 auto;
+    font-weight: 600;
+}
+
+
+.game-list-container {
+    width: 90%;
+    min-height: 200px;
+    background-color: #92600383;
+    margin: 5px auto 0 auto;
+    border-radius: 8px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 40px 20px auto auto;
+}
+
+.game-edit-button {
+    background-color: #926003a6;
+    border-radius: 6px;
+    padding: 0 3px 0 3px;
+    cursor: pointer;
+}
+
+.table-header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-content: center;
+    border: #926003 solid 1px;
+}
+
+.game-list-container .games {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff8f;
+    display: grid;
+    grid-auto-rows: 20px;
+    row-gap: 3px;
+    margin: 5px 0 0 0;
+    padding: 5px 0 5px 0;
+}
+
+.game-list-container .games .game-div {
+    display: grid;
+    width: 100%;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 85px auto 80px;
+    grid-auto-rows: 20px;
+    background-color: #ffffff96;
+}
+
+.add-new-game {
+    height: auto;
+    width: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+
+.add-new-game span{
+    height: auto;
+    width: auto;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 6px;
+    background-color: rgba(127, 255, 212, 0.521);
+}
+
+
+
+.home-page-footer {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(173, 126, 68, 0.459);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
